@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Vendors/jquery.js"></script>
+    <script src="./Scripts/client.js"></script>
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Server Side Calculator</title>
+</head>
+<body>
+    
+    <div class="jumbotron">
+        <h1>Server Side Calculator</h1>
+    </div>
+    
+    <div id="body" class="container">
+
+        <!-- Input for first number -->
+        <input id="firstValue" type="number" placeholder="Enter Number">
+
+        <!-- buttons to select mathematical operators -->
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary">
+              <input type="radio" name="add" id="add"> +
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="subtract" id="subtract"> -
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="multiply" id="multiply"> *
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="divide" id="divide"> /
+            </label>
+          </div>
+
+        <!-- input for second number -->
+        <input id="secondValue" type="number" placeholder="Enter Number">
+
+        <!-- submit button -->
+        <button id="Submit" class="btn btn-info">=</button>
+        
+        <!-- clear button -->
+        <button id="clear" class="btn btn-danger">C</button>
+
+        <!-- This is where the current answer will be displayed -->
+        <div id="displayAnswer"></div>
+
+        <!-- this is where the equation history will be displayed -->
+        <ul id="displayHistory"></ul>
+        
+    </div> <!-- end body container -->
+
+
+
+
+    <!-- bootstrap js/jq -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
