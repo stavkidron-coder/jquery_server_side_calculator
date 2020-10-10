@@ -19,5 +19,11 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [X] - Add a div where the calculated number will be appended to
     [X] - Add a list where the current and previous mathematical equations will be appended to (including the answer)
 
-[] Creating a Server
-    []
+[] Creating the Server
+    [X] - npm init --yes
+    [X] - npm install express
+    [X] - npm install body-parser
+    [X] - Add "start": "node server/server.js"
+    [X] - In server.js, create const for express
+    [X] - In server.js, create const for body-parser
+    [] - Create const app which makes an instance of express
