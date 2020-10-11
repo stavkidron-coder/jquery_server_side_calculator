@@ -46,6 +46,8 @@ function submitEquation(){
 
 function clearCalc(){
     console.log('clicked clearCalc');
+        $('#firstValue').val(''),
+        $('#secondValue').val('')
 }
 
 function add(){
