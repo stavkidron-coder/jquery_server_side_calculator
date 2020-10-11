@@ -6,6 +6,13 @@ function onReady(){
     console.log('Hello from jQ');
 
     getInputedNumbers();
+
+    $('#submit').on('click', submitEquation);
+    $('#clear').on('click', clearCalc);
+    $('#addBtn').on('click', add);
+    $('#subtractBtn').on('click', subtract);
+    $('#multiplyBtn').on('click', multiply);
+    $('#divideBtn').on('click', divide);
 }
 
 function getInputedNumbers(){
@@ -31,4 +38,28 @@ function appendToDom(array){
         `)
         
     }
+}
+
+function submitEquation(){
+    console.log('clicked submitEquation');    
+}
+
+function clearCalc(){
+    console.log('clicked clearCalc');
+}
+
+function add(){
+    console.log('clicked addBtn');
+}
+
+function subtract(){
+    console.log('clicked subtractBtn');
+}
+
+function multiply(){
+    console.log('clicked multiplyBtn');
+}
+
+function divide(){
+    console.log('clicked divideBtn');
 }
