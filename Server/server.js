@@ -14,6 +14,5 @@ app.get('/inputedNumbers', (req, res) => { //brings in inputedNumbers array
 });
 
 app.listen(port, () => { //listen keeps server open
-    console.log('Up and running on port', port); //message confirming that server is running
-    
+    console.log('Up and running on port', port); //message confirming that server is running   
 });

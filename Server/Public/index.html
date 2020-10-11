@@ -20,11 +20,25 @@
         <input id="firstValue" type="number" placeholder="Enter Number">
 
         <!-- buttons to select mathematical operators -->
-        <div id="operatorBtns">
-            <button id="addBtn">+</button>
-            <button id="subtractBtn">-</button>
-            <button id="multiplyBtn">*</button>
-            <button id="divideBtn">/</button>
+        <div>
+            <ul class="operatorBtns">
+                <li>
+                    <label for="addBtn">+</label>
+                    <input type="radio" name="operatorBtn" id="addBtn"></input>
+                </li>
+                <li>
+                    <label for="subtractBtn">-</label>
+                    <input type="radio" name="operatorBtn" id="subtractBtn"></input>
+                </li>
+                <li>
+                    <label for="multiplyBtn">*</label>
+                    <input type="radio" name="operatorBtn" id="multiplyBtn"></input>
+                </li>
+                <li>
+                    <label for="divideBtn">/</label>
+                    <input type="radio" name="operatorBtn" id="divideBtn"></input>
+                </li>
+            </ul>
         </div>
 
         <!-- input for second number -->

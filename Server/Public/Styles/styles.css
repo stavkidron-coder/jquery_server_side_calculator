@@ -1,7 +1,49 @@
-.jumbotron{
-    text-align: center;
+.operatorBtns {
+    list-style-type: none;
+    margin: 25px;
+    padding: 0;
+  }
+
+  .operatorBtns li {
+    float: left;
+    margin: 0 5px 0 0;
+    width: 20px;
+    height: 25px;
+    position: relative;
+  }
+  
+
+.operatorBtns label,
+.operatorBtns input {
+  display: block;
+  position: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-#body {
-    text-align: center;
+.operatorBtns input[type="radio"] {
+    opacity: 0.01;
+    z-index: 100;
+  }
+
+.operatorBtns input[type="radio"]:checked+label,
+.Checked+label {
+  background: yellow;
 }
+
+.operatorBtns label {
+    padding: 5px;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    z-index: 90;
+  }
+
+  .operatorBtns label:hover {
+    background: #DDD;
+  }
+
+  .addBtn {
+      background-color: red;
+  }
