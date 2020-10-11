@@ -5,11 +5,11 @@
   }
 
   .operatorBtns li {
-    float: left;
     margin: 0 5px 0 0;
     width: 20px;
     height: 25px;
     position: relative;
+    display: inline-block;
   }
   
 
@@ -23,10 +23,10 @@
   bottom: 0;
 }
 
-.operatorBtns input[type="radio"] {
+/* .operatorBtns input[type="radio"] {
     opacity: 0.01;
     z-index: 100;
-  }
+  } */
 
 .operatorBtns input[type="radio"]:checked+label,
 .Checked+label {
@@ -42,8 +42,4 @@
 
   .operatorBtns label:hover {
     background: #DDD;
-  }
-
-  .addBtn {
-      background-color: red;
   }
